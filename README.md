@@ -81,4 +81,42 @@ This approach keeps the scoring **stable, fair, and explainable**.
 ---
 
 ## Project Structure
+```
+ATS_Resume_Scorer/
+│
+├── app.py # Streamlit UI
+├── scoring.py # ATS scoring logic
+├── domain_detection.py # Job domain detection
+├── skill_taxonomy.py # Domain-specific skill sets
+├── utils.py # PDF parsing & text cleaning
+└── README.md
+```
 
+---
+
+## How to Run the Project
+
+### 1. Install dependencies
+```bash
+pip install stramlit
+pip install nltk
+pip install scikit-learn
+pip install PyPDF2
+streamlit run app.py
+```
+##  Access the app
+
+Open your browser and visit:
+👉 http://localhost:8501
+---
+## Limitations
+
+This system does not use supervised learning or any labeled resume datasets, so standard accuracy metrics are not calculated.
+
+The skill lists are manually curated for common domains and may not include very niche or newly emerging technologies.
+
+Experience level and leadership requirements are identified using simple rules and may not fully capture senior-level expectations.
+
+The suggestions provided are rule-based and do not use large language models for detailed or personalized recommendations.
+
+---
