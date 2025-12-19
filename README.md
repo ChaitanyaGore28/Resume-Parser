@@ -87,7 +87,7 @@ ATS_Resume_Scorer/
 ├── app.py # Streamlit UI
 ├── scoring.py # ATS scoring logic
 ├── domain_detection.py # Job domain detection
-├── skill_taxonomy.py # Domain-specific skill sets
+├── skills.py # Domain-specific skill sets
 ├── utils.py # PDF parsing & text cleaning
 └── README.md
 ```
